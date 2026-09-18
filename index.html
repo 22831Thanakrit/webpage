@@ -3,206 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Arty - Modern Student Portfolio">
+
     <title>ARTY | Student Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Background Effects -->
-    <div class="battlefield-bg"></div>
-    <div class="smoke-layer smoke-one"></div>
-    <div class="smoke-layer smoke-two"></div>
-    <div class="ember-layer"></div>
-    <div class="scanlines"></div>
+    <!-- Background -->
+    <div class="background">
+        <div class="grid"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
 
     <!-- Navigation -->
-    <header class="site-header">
-        <nav class="navbar">
+    <header class="navbar">
+        <div class="nav-container">
 
-            <a href="index.html" class="brand">
-                <span class="brand-mark">A</span>
-                <span>
-                    <strong>ARTY</strong>
-                    <small>STUDENT PORTFOLIO</small>
-                </span>
+            <a href="index.html" class="logo">
+                <div class="logo-box">ART</div>
+
+                <div>
+                    <strong>THANAKRIT<span>.PORTFOLIO</span></strong>
+                    <small>STUDENT // M.3/2 GSMP</small>
+                </div>
             </a>
 
-            <div class="nav-links">
-                <a href="index.html" class="active">หน้าแรก</a>
-                <a href="profile.html">ประวัติส่วนตัว</a>
-                <a href="education.html">การศึกษา</a>
-                <a href="hobby.html">งานอดิเรก</a>
-                <a href="contact.html">ติดต่อ</a>
-            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    หน้าแรก
+                </a>
 
-        </nav>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    ประวัติส่วนตัว
+                </a>
+
+                <a href="education.html">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    การศึกษา
+                </a>
+
+                <a href="hobby.html">
+                    <i class="fa-solid fa-gamepad"></i>
+                    งานอดิเรก
+                </a>
+
+                <a href="contact.html">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    ติดต่อ
+                </a>
+            </nav>
+
+        </div>
     </header>
 
-    <main>
+    <!-- Main -->
+    <main class="container">
 
-        <!-- Hero -->
-        <section class="hero container">
+        <section class="hero">
 
+            <!-- Left -->
             <div class="hero-content">
 
-                <div class="status-line">
-                    <span class="status-dot"></span>
-                    STUDENT PROFILE // ONLINE
+                <div class="status">
+                    <span></span>
+                    FUTURE TECH STUDENT PORTFOLIO
                 </div>
 
-                <p class="hero-kicker">WELCOME TO MY DIGITAL FIELD</p>
-
-                <h1>
-                    ธนกฤต
-                    <span>ธนันชัย</span>
-                </h1>
-
-                <p class="hero-description">
-                    สวัสดีครับ ผมชื่ออาร์ตี้ นักเรียนชั้นมัธยมศึกษาปีที่ 3
-                    ผู้ที่สนใจด้านคอมพิวเตอร์ ฟุตบอล และการสร้างสรรค์สิ่งใหม่ ๆ
+                <p class="mini-title">
+                    HELLO WORLD //
                 </p>
 
-                <div class="hero-actions">
+                <h1>
+                    สวัสดีครับ,<br>
+                    ผม <span>ธนกฤต ธนันชัย</span>
+                </h1>
+
+                <h2>
+                    <span class="bracket">&lt;</span>
+                    อาร์ตี้
+                    <span class="bracket">/&gt;</span>
+                </h2>
+
+                <p class="hero-description">
+                    นักเรียนชั้นมัธยมศึกษาปีที่ 3/2
+                    ห้องเรียนพิเศษ GSMP
+                    โรงเรียนจอมทอง จังหวัดเชียงใหม่
+                </p>
+
+                <p class="hero-description">
+                    ผมมีความสนใจด้าน
+                    <strong>คณิตศาสตร์</strong>,
+                    <strong>เทคโนโลยีคอมพิวเตอร์</strong>
+                    และ <strong>ฟุตบอล</strong>
+                </p>
+
+                <div class="hero-buttons">
+
                     <a href="profile.html" class="btn btn-primary">
+                        <i class="fa-solid fa-user"></i>
                         รู้จักฉันมากขึ้น
-                        <span>→</span>
                     </a>
 
                     <a href="hobby.html" class="btn btn-outline">
-                        ดูงานอดิเรกของฉัน
+                        <i class="fa-solid fa-gamepad"></i>
+                        ดูงานอดิเรก
                     </a>
+
                 </div>
 
-                <div class="hero-stats">
+                <!-- Stats -->
+                <div class="stats">
 
-                    <div>
-                        <strong>14</strong>
-                        <span>อายุ</span>
+                    <div class="stat">
+                        <strong>ม.3/2</strong>
+                        <small>ระดับชั้น</small>
                     </div>
 
-                    <div>
-                        <strong>M.3</strong>
-                        <span>ระดับชั้น</span>
-                    </div>
-
-                    <div>
+                    <div class="stat">
                         <strong>GSMP</strong>
-                        <span>ห้องเรียน</span>
+                        <small>ห้องเรียนพิเศษ</small>
+                    </div>
+
+                    <div class="stat">
+                        <strong>2026</strong>
+                        <small>Portfolio</small>
                     </div>
 
                 </div>
 
             </div>
 
-            <!-- Profile Visual -->
+            <!-- Right -->
             <div class="hero-visual">
 
-                <div class="target-ring ring-one"></div>
-                <div class="target-ring ring-two"></div>
+                <div class="profile-orbit orbit-1"></div>
+                <div class="profile-orbit orbit-2"></div>
+
+                <div class="profile-glow"></div>
 
                 <div class="profile-frame">
 
-                    <div class="frame-label">
-                        <span>IDENTITY</span>
-                        <span>001</span>
-                    </div>
-
-                    <img
-                        src="https://placehold.co/700x850/0a1726/bdeaff?text=ARTY"
-                        alt="รูปโปรไฟล์ของฉัน"
-                    >
-
-                    <div class="profile-overlay">
-                        <span>ARTY</span>
-                        <small>STUDENT / CREATOR</small>
+                    <div class="profile-image">
+                        <div class="profile-placeholder">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            <span>ARTY</span>
+                        </div>
                     </div>
 
                 </div>
 
-                <div class="floating-data data-one">
-                    <span>STATUS</span>
-                    <strong>ACTIVE</strong>
+                <div class="floating-card location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <small>LOCATION</small>
+                        <strong>เชียงใหม่, ไทย</strong>
+                    </div>
                 </div>
 
-                <div class="floating-data data-two">
-                    <span>FIELD</span>
-                    <strong>COMPUTER</strong>
+                <div class="floating-card school">
+                    <i class="fa-solid fa-school"></i>
+                    <div>
+                        <small>SCHOOL</small>
+                        <strong>โรงเรียนจอมทอง</strong>
+                    </div>
+                </div>
+
+                <div class="floating-code">
+                    <span>01</span>
+                    <span>STUDENT</span>
+                    <span>CREATIVE</span>
+                    <span>TECH</span>
                 </div>
 
             </div>
 
         </section>
 
-        <!-- Intro -->
-        <section class="section container">
+        <!-- Quick Introduction -->
+        <section class="quick-section">
 
             <div class="section-heading">
-                <div>
-                    <span class="section-number">01 / PROFILE</span>
-                    <h2>เข้าสู่โลกของฉัน</h2>
-                </div>
-
-                <p>
-                    เว็บไซต์นี้รวบรวมข้อมูลเกี่ยวกับตัวผม
-                    การศึกษา งานอดิเรก และสิ่งที่ผมสนใจ
-                </p>
+                <span>01 //</span>
+                <h2>EXPLORE MY PORTFOLIO</h2>
             </div>
 
-            <div class="feature-grid">
+            <div class="quick-grid">
 
-                <article class="feature-card large">
-                    <span class="feature-number">01</span>
-                    <span class="feature-icon">◈</span>
-                    <h3>My Identity</h3>
-                    <p>
-                        เรียนรู้เกี่ยวกับตัวตน ความสนใจ
-                        และเป้าหมายของผมในอนาคต
-                    </p>
-                    <a href="profile.html">EXPLORE PROFILE →</a>
-                </article>
+                <a href="profile.html" class="quick-card">
+                    <div class="quick-number">01</div>
+                    <i class="fa-solid fa-user-astronaut"></i>
+                    <h3>Profile</h3>
+                    <p>ทำความรู้จักตัวตนและความสนใจของผม</p>
+                    <span>VIEW PROFILE →</span>
+                </a>
 
-                <article class="feature-card">
-                    <span class="feature-number">02</span>
-                    <span class="feature-icon">⌁</span>
+                <a href="education.html" class="quick-card">
+                    <div class="quick-number">02</div>
+                    <i class="fa-solid fa-graduation-cap"></i>
                     <h3>Education</h3>
-                    <p>
-                        เส้นทางการศึกษาและสิ่งที่ผมกำลังเรียนรู้
-                    </p>
-                    <a href="education.html">VIEW TIMELINE →</a>
-                </article>
+                    <p>ประวัติการศึกษาและวิชาที่สนใจ</p>
+                    <span>VIEW EDUCATION →</span>
+                </a>
 
-                <article class="feature-card accent-card">
-                    <span class="feature-number">03</span>
-                    <span class="feature-icon">✦</span>
-                    <h3>My Hobbies</h3>
-                    <p>
-                        สิ่งที่ผมชอบทำในเวลาว่าง
-                        ตั้งแต่กีฬา เกม เพลง และภาพยนตร์
-                    </p>
-                    <a href="hobby.html">DISCOVER →</a>
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- CTA -->
-        <section class="cta-section container">
-
-            <div class="cta-box">
-
-                <div>
-                    <span class="section-number">MISSION / NEXT STEP</span>
-                    <h2>พร้อมทำความรู้จักผมหรือยัง?</h2>
-                    <p>
-                        สำรวจ Portfolio ของผมผ่านเมนูด้านบน
-                    </p>
-                </div>
-
-                <a href="contact.html" class="btn btn-primary">
-                    CONTACT ME →
+                <a href="hobby.html" class="quick-card">
+                    <div class="quick-number">03</div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h3>Hobbies</h3>
+                    <p>กิจกรรม งานอดิเรก และสิ่งที่ชอบ</p>
+                    <span>VIEW HOBBIES →</span>
                 </a>
 
             </div>
@@ -212,13 +234,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-
-        <div class="footer-inner">
+    <footer>
+        <div class="footer-container">
 
             <div>
-                <strong>ARTY</strong>
-                <p>Modern Student Portfolio</p>
+                <strong>ARTY // THANAKRIT</strong>
+                <p>Student Portfolio — M.3/2 GSMP</p>
             </div>
 
             <div class="footer-links">
@@ -229,58 +250,8 @@
                 <a href="contact.html">ติดต่อ</a>
             </div>
 
-            <div>
-                <p>ธนกฤต ธนันชัย</p>
-                <small>ม.3/2</small>
-            </div>
-
         </div>
-
-        <div class="copyright">
-            © 2026 ARTY Student Portfolio
-        </div>
-
     </footer>
-
-    <!-- Mouse Impact Effect -->
-    <script>
-        document.addEventListener("pointerdown", function(event) {
-
-            if (event.button !== 0) return;
-
-            if (
-                event.target.closest("a") ||
-                event.target.closest("button")
-            ) {
-                return;
-            }
-
-            const burst = document.createElement("div");
-            burst.className = "click-burst";
-
-            burst.style.left = event.clientX + "px";
-            burst.style.top = event.clientY + "px";
-
-            burst.innerHTML = `
-                <span class="burst-flash"></span>
-                <span class="burst-ring"></span>
-                <span class="burst-ring ring-delay"></span>
-                <span class="burst-spark s1"></span>
-                <span class="burst-spark s2"></span>
-                <span class="burst-spark s3"></span>
-                <span class="burst-spark s4"></span>
-                <span class="burst-spark s5"></span>
-                <span class="burst-spark s6"></span>
-                <span class="burst-smoke"></span>
-            `;
-
-            document.body.appendChild(burst);
-
-            setTimeout(() => {
-                burst.remove();
-            }, 900);
-        });
-    </script>
 
 </body>
 </html>
