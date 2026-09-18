@@ -3,133 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>อาร์ตี้ ธนกฤต - Warzone Portfolio</title>
+    <meta name="description" content="Arty - Modern Student Portfolio">
+    <title>ARTY | Student Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Particle Spark Effect Layer -->
-    <div class="fire-sparks">
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-        <div class="spark"></div>
-    </div>
+    <!-- Background Effects -->
+    <div class="battlefield-bg"></div>
+    <div class="smoke-layer smoke-one"></div>
+    <div class="smoke-layer smoke-two"></div>
+    <div class="ember-layer"></div>
+    <div class="scanlines"></div>
 
-    <!-- Navigation Bar -->
-    <header>
+    <!-- Navigation -->
+    <header class="site-header">
         <nav class="navbar">
-            <div class="logo">
-                <i class="fa-solid fa-crosshairs"></i> ARTY <span>TACTICAL</span>
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark">A</span>
+                <span>
+                    <strong>ARTY</strong>
+                    <small>STUDENT PORTFOLIO</small>
+                </span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active">หน้าแรก</a>
+                <a href="profile.html">ประวัติส่วนตัว</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
-                <li><a href="profile.html"><i class="fa-solid fa-user-ninja"></i> ประวัติส่วนตัว</a></li>
-                <li><a href="education.html"><i class="fa-solid fa-graduation-cap"></i> การศึกษา</a></li>
-                <li><a href="hobby.html"><i class="fa-solid fa-gamepad"></i> งานอดิเรก</a></li>
-                <li><a href="contact.html"><i class="fa-solid fa-phone-volume"></i> ติดต่อ</a></li>
-            </ul>
+
         </nav>
     </header>
 
-    <!-- Main Content: Hero Section -->
-    <main class="container">
-        <section class="hero-section">
+    <main>
+
+        <!-- Hero -->
+        <section class="hero container">
+
             <div class="hero-content">
-                <div class="badge"><i class="fa-solid fa-shield-halved"></i> STUDENT PORTFOLIO M.3/2</div>
-                <h1>ธนกฤต ธนันชัย <span class="highlight">(อาร์ตี้)</span></h1>
-                <p class="hero-subtitle">"พร้อมลุยทุกความท้าทาย ทั้งในสนามแข่งและโลกแห่งการเรียนรู้"</p>
-                <p class="hero-desc">นักเรียนชั้นมัธยมศึกษาปีที่ 3/2 โรงเรียนจอมทอง ผู้มีความหลงใหลในกีฬาฟุตบอล สายลุยเกมระดับโปร และสนใจในการเรียนรู้ด้านคณิตศาสตร์และคอมพิวเตอร์อย่างมุ่งมั่น</p>
-                
-                <div class="hero-buttons">
-                    <a href="profile.html" class="btn btn-primary"><i class="fa-solid fa-user"></i> รู้จักฉันมากขึ้น</a>
-                    <a href="hobby.html" class="btn btn-secondary"><i class="fa-solid fa-fire"></i> ดูงานอดิเรกของฉัน</a>
+
+                <div class="status-line">
+                    <span class="status-dot"></span>
+                    STUDENT PROFILE // ONLINE
                 </div>
+
+                <p class="hero-kicker">WELCOME TO MY DIGITAL FIELD</p>
+
+                <h1>
+                    ธนกฤต
+                    <span>ธนันชัย</span>
+                </h1>
+
+                <p class="hero-description">
+                    สวัสดีครับ ผมชื่ออาร์ตี้ นักเรียนชั้นมัธยมศึกษาปีที่ 3
+                    ผู้ที่สนใจด้านคอมพิวเตอร์ ฟุตบอล และการสร้างสรรค์สิ่งใหม่ ๆ
+                </p>
+
+                <div class="hero-actions">
+                    <a href="profile.html" class="btn btn-primary">
+                        รู้จักฉันมากขึ้น
+                        <span>→</span>
+                    </a>
+
+                    <a href="hobby.html" class="btn btn-outline">
+                        ดูงานอดิเรกของฉัน
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>14</strong>
+                        <span>อายุ</span>
+                    </div>
+
+                    <div>
+                        <strong>M.3</strong>
+                        <span>ระดับชั้น</span>
+                    </div>
+
+                    <div>
+                        <strong>GSMP</strong>
+                        <span>ห้องเรียน</span>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="hero-image-wrapper">
-                <div class="image-frame">
-                    <img src="https://placehold.co/400x500/2b1a0e/ff6600?text=ARTY+PROFILE" alt="รูปโปรไฟล์ของธนกฤต">
-                    <div class="frame-border"></div>
+            <!-- Profile Visual -->
+            <div class="hero-visual">
+
+                <div class="target-ring ring-one"></div>
+                <div class="target-ring ring-two"></div>
+
+                <div class="profile-frame">
+
+                    <div class="frame-label">
+                        <span>IDENTITY</span>
+                        <span>001</span>
+                    </div>
+
+                    <img
+                        src="https://placehold.co/700x850/0a1726/bdeaff?text=ARTY"
+                        alt="รูปโปรไฟล์ของฉัน"
+                    >
+
+                    <div class="profile-overlay">
+                        <span>ARTY</span>
+                        <small>STUDENT / CREATOR</small>
+                    </div>
+
                 </div>
+
+                <div class="floating-data data-one">
+                    <span>STATUS</span>
+                    <strong>ACTIVE</strong>
+                </div>
+
+                <div class="floating-data data-two">
+                    <span>FIELD</span>
+                    <strong>COMPUTER</strong>
+                </div>
+
             </div>
+
         </section>
 
-        <!-- Highlight Grid Section -->
-        <section class="stats-grid">
-            <div class="stat-card">
-                <i class="fa-solid fa-school icon"></i>
-                <h3>โรงเรียน</h3>
-                <p>จอมทอง (เชียงใหม่)</p>
+        <!-- Intro -->
+        <section class="section container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-number">01 / PROFILE</span>
+                    <h2>เข้าสู่โลกของฉัน</h2>
+                </div>
+
+                <p>
+                    เว็บไซต์นี้รวบรวมข้อมูลเกี่ยวกับตัวผม
+                    การศึกษา งานอดิเรก และสิ่งที่ผมสนใจ
+                </p>
             </div>
-            <div class="stat-card">
-                <i class="fa-solid fa-ranking-star icon"></i>
-                <h3>ระดับชั้น</h3>
-                <p>มัธยมศึกษาปีที่ 3/2 (GSMP)</p>
+
+            <div class="feature-grid">
+
+                <article class="feature-card large">
+                    <span class="feature-number">01</span>
+                    <span class="feature-icon">◈</span>
+                    <h3>My Identity</h3>
+                    <p>
+                        เรียนรู้เกี่ยวกับตัวตน ความสนใจ
+                        และเป้าหมายของผมในอนาคต
+                    </p>
+                    <a href="profile.html">EXPLORE PROFILE →</a>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-number">02</span>
+                    <span class="feature-icon">⌁</span>
+                    <h3>Education</h3>
+                    <p>
+                        เส้นทางการศึกษาและสิ่งที่ผมกำลังเรียนรู้
+                    </p>
+                    <a href="education.html">VIEW TIMELINE →</a>
+                </article>
+
+                <article class="feature-card accent-card">
+                    <span class="feature-number">03</span>
+                    <span class="feature-icon">✦</span>
+                    <h3>My Hobbies</h3>
+                    <p>
+                        สิ่งที่ผมชอบทำในเวลาว่าง
+                        ตั้งแต่กีฬา เกม เพลง และภาพยนตร์
+                    </p>
+                    <a href="hobby.html">DISCOVER →</a>
+                </article>
+
             </div>
-            <div class="stat-card">
-                <i class="fa-solid fa-code icon"></i>
-                <h3>วิชาที่ชอบ</h3>
-                <p>คณิตศาสตร์ & คอมพิวเตอร์</p>
-            </div>
-            <div class="stat-card">
-                <i class="fa-solid fa-football icon"></i>
-                <h3>ความสนใจ</h3>
-                <p>ฟุตบอล & เกม E-Sports</p>
-            </div>
+
         </section>
+
+        <!-- CTA -->
+        <section class="cta-section container">
+
+            <div class="cta-box">
+
+                <div>
+                    <span class="section-number">MISSION / NEXT STEP</span>
+                    <h2>พร้อมทำความรู้จักผมหรือยัง?</h2>
+                    <p>
+                        สำรวจ Portfolio ของผมผ่านเมนูด้านบน
+                    </p>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">
+                    CONTACT ME →
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <h3><i class="fa-solid fa-crosshairs"></i> ARTY TACTICAL PORTFOLIO</h3>
-                <p>ผลงานโครงงานวิชาคอมพิวเตอร์ - ธนกฤต ธนันชัย ชั้น ม.3/2 โรงเรียนจอมทอง</p>
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <strong>ARTY</strong>
+                <p>Modern Student Portfolio</p>
             </div>
-            <ul class="footer-links">
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
-                <li><a href="education.html">การศึกษา</a></li>
-                <li><a href="hobby.html">งานอดิเรก</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
-            <div class="copyright">
-                &copy; 2026 Thanakrit Thananchai. All Rights Reserved.
+
+            <div class="footer-links">
+                <a href="index.html">หน้าแรก</a>
+                <a href="profile.html">ประวัติ</a>
+                <a href="education.html">การศึกษา</a>
+                <a href="hobby.html">งานอดิเรก</a>
+                <a href="contact.html">ติดต่อ</a>
             </div>
+
+            <div>
+                <p>ธนกฤต ธนันชัย</p>
+                <small>ม.3/2</small>
+            </div>
+
         </div>
+
+        <div class="copyright">
+            © 2026 ARTY Student Portfolio
+        </div>
+
     </footer>
 
-    <!-- Interactive Explosion Effect Script -->
+    <!-- Mouse Impact Effect -->
     <script>
-        document.addEventListener('click', function(e) {
-            const explosion = document.createElement('div');
-            explosion.className = 'explosion';
-            explosion.style.left = e.clientX + 'px';
-            explosion.style.top = e.clientY + 'px';
-            
-            // Create particle sparks on click
-            for (let i = 0; i < 12; i++) {
-                const spark = document.createElement('div');
-                spark.className = 'spark-particle';
-                const angle = Math.random() * Math.PI * 2;
-                const dist = Math.random() * 80 + 20;
-                spark.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
-                spark.style.setProperty('--dy', Math.sin(angle) * dist + 'px');
-                explosion.appendChild(spark);
+        document.addEventListener("pointerdown", function(event) {
+
+            if (event.button !== 0) return;
+
+            if (
+                event.target.closest("a") ||
+                event.target.closest("button")
+            ) {
+                return;
             }
 
-            document.body.appendChild(explosion);
+            const burst = document.createElement("div");
+            burst.className = "click-burst";
+
+            burst.style.left = event.clientX + "px";
+            burst.style.top = event.clientY + "px";
+
+            burst.innerHTML = `
+                <span class="burst-flash"></span>
+                <span class="burst-ring"></span>
+                <span class="burst-ring ring-delay"></span>
+                <span class="burst-spark s1"></span>
+                <span class="burst-spark s2"></span>
+                <span class="burst-spark s3"></span>
+                <span class="burst-spark s4"></span>
+                <span class="burst-spark s5"></span>
+                <span class="burst-spark s6"></span>
+                <span class="burst-smoke"></span>
+            `;
+
+            document.body.appendChild(burst);
 
             setTimeout(() => {
-                explosion.remove();
-            }, 800);
+                burst.remove();
+            }, 900);
         });
     </script>
+
 </body>
 </html>
